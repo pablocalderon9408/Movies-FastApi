@@ -11,25 +11,25 @@ class Movie(Base):
     rating = Column(Float)
     category = Column(String)
 
-    def __init__(self, title: str, overview: str, year: str, rating: float, category: str):
-        self.title = title
-        self.overview = overview
-        self.year = year
-        self.rating = rating
-        self.category = category
+    # def __init__(self, title: str, overview: str, year: str, rating: float, category: str):
+    #     self.title = title
+    #     self.overview = overview
+    #     self.year = year
+    #     self.rating = rating
+    #     self.category = category
 
-    def __repr__(self):
-        return f"Movie(title={self.title}, overview={self.overview}, year={self.year}, rating={self.rating}, category={self.category})"
+    # def __repr__(self):
+    #     return f"Movie(title={self.title}, overview={self.overview}, year={self.year}, rating={self.rating}, category={self.category})"
 
-    def __str__(self):
-        return self.__repr__()
+    # def __str__(self):
+    #     return self.__repr__()
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "title": self.title,
-            "overview": self.overview,
-            "year": self.year,
-            "rating": self.rating,
-            "category": self.category
-        }
+    # def to_dict(self):
+    #     return {
+    #         "id": self.id,
+    #         "title": self.title,
+    #         "overview": self.overview,
+    #         "year": self.year,
+    #         "rating": self.rating,
+    #         "category": self.category
+    #     }
